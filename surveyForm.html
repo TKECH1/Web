@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>freeCodeCamp Survey Form</title>
+         <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        </head>
+    
+  <header>
+    <ul>
+      <li><a href="#">MAIN PAGE</a></li>
+      <li><a href="#">FORM</a></li>
+      <li><a href="#">CONTACTS</a></li>
+      </ul>
+      </header>
+
+
+  <body>
+    <h1 id="title">SummerJourney Camp Form</h1>
+    <p class="under" id="description">Fill this form and join our Summer Camp<p>
+    
+    <!-- Fieldsets -->
+            <form id="survey-form"action='https://register-demo.freecodecamp.org'>
+              <fieldset>
+                <label id="name-label"><h3 class="mb">First Name:</h3> <input id="name" placeholder="Enter your name" required></label>
+                <label id="email-label"><h3 class="mb">Email:</h3> <input id="email" type="email" placeholder="Enter your Email" required></label>
+                <label id="number-label"><h3 class="mb">Age:</h3> <input id="number" type="number" min="10" max="17" placeholder="Age" required></label>
+                </fieldset>
+    
+    <!-- Option selection -->
+                <fieldset>
+                  <label><h3>What is your hobbi?</h3> 
+                  <select id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">Football</option>
+                    <option value="2">Drawing</option>
+                    <option value="3">Swimming</option>
+                    <option valur="4">Other</option>
+                    </select>
+                    </label>
+                </fieldset>
+    
+                <fieldset>
+                  <h3>Which team you choose for games?</h3>
+                  <label><input value="inline" class="inline" name="kuryt" type="radio"> Tigers</label>
+                  <label><input value="inline" class="inline" name="kuryt" type="radio"> Woolfes</label>
+                  <label><input value="inline" class="inline" name="kuryt" type="radio"> Bears</label>
+                    <label>
+                      <input value="inline" class="inline" type="checkbox"> I accept the<a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                    </label>
+                    <label>
+                      <input value="inline" class="inline" type="checkbox"> We are not responsible for your health</a>
+                    </label>
+                    </fieldset>
+                    <!-- textarea -->
+                    <fieldset>
+                      <label><h3>Provide a bio: </h3><input class="bio" rows="3" cols="30" type="textarea" placeholder="I want to..."></label>
+                      </fieldset>
+                    <!-- SUBMIT -->
+                    <input id="submit" type="submit">
+              </form>
+  </body>
+</html>
